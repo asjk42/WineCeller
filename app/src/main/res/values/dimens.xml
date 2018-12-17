@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="detail">40sp</dimen>
+    <dimen name="home">80sp</dimen>
+    <dimen name="search">44sp</dimen>
+</resources>

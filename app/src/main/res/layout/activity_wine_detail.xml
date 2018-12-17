@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WineDetailActivity">
+
+    <!--wineimage-->
+    <ImageView
+        android:id="@+id/det_img"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/w1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <!--title-->
+    <TextView
+        android:id="@+id/det_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="194dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/title"
+        android:textSize="@dimen/detail"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/det_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 表頭 -->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14999998">
+
+
+        <TextView
+            android:id="@+id/det_winery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/winery"
+            android:textSize="@dimen/detail"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="408dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <TextView
+            android:id="@+id/det_dsgn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="desg"
+            android:textSize="@dimen/detail"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="582dp" />
+
+        <TextView
+            android:id="@+id/det_vari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/variety"
+            android:textSize="@dimen/detail"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="352dp"
+            tools:layout_editor_absoluteY="929dp" />
+
+        <TextView
+            android:id="@+id/det_ctry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country"
+            android:textSize="@dimen/detail"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="400dp"
+            tools:layout_editor_absoluteY="327dp" />
+
+        <TextView
+            android:id="@+id/det_prov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prov"
+            android:textSize="@dimen/detail"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="400dp"
+            tools:layout_editor_absoluteY="462dp" />
+
+        <TextView
+            android:id="@+id/det_rg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/detail"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="434dp"
+            tools:layout_editor_absoluteY="597dp" />
+
+        <TextView
+            android:id="@+id/det_rg_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/detail"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="434dp"
+            tools:layout_editor_absoluteY="732dp" />
+    </LinearLayout>
+
+    <!-- getdatafromdb -->
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <!--winery-->
+        <TextView
+            android:id="@+id/db_winery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/winery"
+            android:textSize="@dimen/detail"
+            tools:layout_editor_absoluteX="408dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <!--desgnition-->
+        <TextView
+            android:id="@+id/db_dsgn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="desg"
+            android:textSize="@dimen/detail"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="582dp" />
+
+        <!--variety-->
+        <TextView
+            android:id="@+id/db_vari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/variety"
+            android:textSize="@dimen/detail"
+            tools:layout_editor_absoluteX="352dp"
+            tools:layout_editor_absoluteY="929dp" />
+
+        <!--country-->
+        <TextView
+            android:id="@+id/db_ctry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country"
+            android:textSize="@dimen/detail"
+            tools:layout_editor_absoluteX="400dp"
+            tools:layout_editor_absoluteY="327dp" />
+
+        <!--prov-->
+        <TextView
+            android:id="@+id/db_prov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prov"
+            android:textSize="@dimen/detail"
+            tools:layout_editor_absoluteX="400dp"
+            tools:layout_editor_absoluteY="462dp" />
+
+        <!--rg1-->
+        <TextView
+            android:id="@+id/db_rg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" rg1"
+            android:textSize="@dimen/detail"
+            tools:layout_editor_absoluteX="434dp"
+            tools:layout_editor_absoluteY="597dp" />
+
+        <!--rg2-->
+        <TextView
+            android:id="@+id/db_rg_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" rg2"
+            android:textSize="@dimen/detail"
+            tools:layout_editor_absoluteX="434dp"
+            tools:layout_editor_absoluteY="732dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="品過"
+            android:textSize="@dimen/detail"
+            tools:layout_editor_absoluteX="482dp"
+            tools:layout_editor_absoluteY="548dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="想品"
+            android:textSize="@dimen/detail"
+            tools:layout_editor_absoluteX="637dp"
+            tools:layout_editor_absoluteY="548dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/det_prc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/price"
+        android:textSize="@dimen/detail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/det_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="35dp"
+        android:text="point.wigget"
+        android:textSize="@dimen/detail"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/det_img"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1000dp"
+        android:layout_marginBottom="29dp"
+        android:text="評價"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/detail"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/det_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+</android.support.constraint.ConstraintLayout>

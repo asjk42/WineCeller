@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WineCeller</string>
+    <string name="search">搜索</string>
+    <string name="recommand">>>每日推薦</string>
+    <integer name="rcdpadding">400</integer>
+
+    <string name="title">品名</string>
+    <string name="winery">產地</string>
+    <string name="variety">品種</string>
+    <string name="country">原產國</string>
+    <string name="prov">原產地</string>
+    <string name="price">市價</string>
+
+
+
+
+</resources>
+
+
